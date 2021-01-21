@@ -1,6 +1,8 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: rgb(252, 252, 252);
+    /* background-color: rgb(250, 250, 250); */
+    /* background-image: linear-gradient(to bottom right,white, rgb(250, 250, 250)); */
+    background-image: radial-gradient(circle, white, white, rgb(235, 235, 235));
 }
 
 .navbar .container a {
