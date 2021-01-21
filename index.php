@@ -23,7 +23,7 @@
                      <a class="nav-link active me-4" aria-current="page" href="#">Home</a>
                      <a class="nav-link me-4" href="#">Features</a>
                      <a class="nav-link me-4" href="#">Pricing</a>
-                     <a class="btn btn-outline-warning ms-4 px-4" href="#">Create CV</a>
+                     <a class="btn btn-outline-warning ms-4 px-4" href="http://localhost/cv-generator/app/create">Create CV</a>
                   </div>
                </div>
          </div>
@@ -40,7 +40,7 @@
                <div class="col-12 text-center col-lg-6 align-self-center main-headlines">
                   <h3>let's <span>create</span> your own span <span>amazing</span> cv</h4>
                   <p>make your cv now!</p>
-                  <button class="btn btn-warning text-white px-5 py-2 mt-3">Create CV</button>
+                  <a href="http://localhost/cv-generator/app/create" class="btn btn-warning text-white px-5 py-2 mt-3">Create CV</a>
                </div>
             </div>
          </div>
@@ -56,8 +56,7 @@
          </div>
       </div>
    </footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
