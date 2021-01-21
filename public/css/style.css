@@ -5,6 +5,13 @@ body {
     background-image: radial-gradient(circle, white, white, rgb(235, 235, 235));
 }
 
+.scrollspy-example {
+    position: relative;
+    height: 480px;
+    margin-top: .5rem;
+    overflow: auto;
+}
+
 .navbar .container a {
     color: rgb(255, 166, 0);
 }
