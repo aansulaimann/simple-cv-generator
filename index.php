@@ -8,13 +8,14 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="public/css/style.css">
+   <link rel="shortcut icon" href="http://localhost/cv-generator/public/img/resume.png">
 </head>
 <body>
     
    <header>
       <nav class="navbar navbar-expand-lg navbar-light mt-3">
          <div class="container">
-               <a class="navbar-brand" href="#"><b>CV Generator</b></a>
+               <a class="navbar-brand" href="http://localhost/cv-generator/"><b>CV Generator</b></a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                </button>
