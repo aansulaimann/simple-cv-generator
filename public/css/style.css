@@ -1,0 +1,22 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(252, 252, 252);
+}
+
+.navbar .container a {
+    color: rgb(255, 166, 0);
+}
+
+.main-headlines span{
+    color: rgb(255, 166, 0);
+    font-weight: 600;
+}
+
+.main-headlines h3{
+    color: black;
+}
+
+.main-headlines p{
+    color: lightgray;
+}
+/* ========== END MAIN CSS =============== */
