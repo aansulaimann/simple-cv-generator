@@ -1,3 +1,10 @@
+<?php require 'functions.php'; 
+   // if(isset($_POST["makeCV"])) {
+   //    data($_POST);
+   //    header("Location: cv.php");
+   // }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +51,7 @@
                   </div>
                </div>
                <div class="col bg-white">
-                  <form action="post">
+                  <form method="post" action="cv.php">
                      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example px-4" tabindex="0">
                         <!-- data diri -->
                         <h4 id="list-item-1"><b>Data Diri</b></h4>
@@ -113,8 +120,8 @@
                         </div>
 
                         <h4 id="list-item-5"><b>Buat CV</b></h4>
-                        <button type="submit" class="btn btn-primary shadow mb-5">Buat CV</button>
-                        <button type="submit" class="btn btn-outline-primary ms-3 mb-5">Batal</button>
+                        <button type="submit" class="btn btn-primary shadow mb-5" name="makeCV">Buat CV</button>
+                        <button type="button" class="btn btn-outline-primary ms-3 mb-5">Batal</button>
                      </div>
                   </form>
                </div>

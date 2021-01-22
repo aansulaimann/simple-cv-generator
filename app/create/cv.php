@@ -1,3 +1,8 @@
+<?php 
+   // require 'functions.php';
+   // var_dump($data);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +36,26 @@
    </header>
 
    <main>
-      
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="card">
+                     <div class="card-body">
+                        <?php echo $_POST["namaDepan"]; ?>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card">
+                     <div class="card-body">
+                        This is some text within a card body.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
    </main>
    
    <footer>
