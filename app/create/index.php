@@ -1,6 +1,8 @@
-<?php session_start(); require 'functions.php'; 
+<?php session_start();
    if(isset($_POST["makeCV"])) {
       $_SESSION["cetak"] = true;
+      // $_POST;
+      header("Location: http://localhost/cv-generator/app/create/cv.php");
    }
 ?>
 
@@ -51,7 +53,7 @@
                   </div>
                </div>
                <div class="col bg-white">
-                  <form method="post" action="cv.php">
+                  <form method="post" action="">
                      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example px-4" tabindex="0">
                         <!-- data diri -->
                         <h4 id="list-item-1"><b>Data Diri</b></h4>
@@ -107,7 +109,7 @@
                         </div>
                         <div class="mb-3">
                            <label for="mulai" class="form-label">Mulai</label>
-                           <input type="number" class="form-control" id="mulai" name="mulai" required autocomplete="off" placeholder="2000">
+                           <input type="number" class="form-control" id="mulai" name="mulai" required autocomplete="off" placeholder="2000" min="0">
                         </div>
                         <div class="mb-3">
                            <label for="akhir" class="form-label">Akhir</label>
@@ -115,7 +117,7 @@
                         </div>
                         <div class="mb-3">
                            <label for="jenisPekerjaan" class="form-label">Jenis Pekerjaan</label>
-                           <input type="number" class="form-control" id="jenisPekerjaan" name="jenisPekerjaan" required autocomplete="off" placeholder="cth: membuat desain animasi">
+                           <input type="tekx" class="form-control" id="jenisPekerjaan" name="jenisPekerjaan" required autocomplete="off" placeholder="cth: membuat desain animasi">
                         </div>
 
                         <h4 id="list-item-4"><b>Skills</b></h4>

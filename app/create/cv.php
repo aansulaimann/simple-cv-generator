@@ -1,7 +1,7 @@
-<?php 
-   session_start();
+<?php session_start();
    if(!isset($_SESSION["cetak"])) {
       header("Location: http://localhost/cv-generator/app/create/");
+      // echo '<script>window.onload(window.print());</script>';
    }
 
 ?>
@@ -66,18 +66,16 @@
                <div class="col text-center">
                   <div class="row bg-dark text-white p-5">
                      <div class="col">
-                        <h2 class="mt-4 mb-3">AAN SULAIMAN</h2>
-                        <h5>IT WEB DEVELOPER</h5>
+                        <h2 class="mt-4 mb-3"><?php echo $_POST["namaDepan"] . " "; echo $_POST["namaBelakang"]; ?></h2>
+                        <h5><?php echo $_POST["job"]; ?></h5>
                      </div>
                   </div>
                   <div class="row ms-1">
                      <div class="col">
                         <h4 class="mt-5 bg-dark p-3 text-white">Pengalaman Kerja</h4>
-                        <p class="fw-bold text-start mb-0">PT. Maju Mundur</p>
-                        <p class="fst-italic text-start mb-1">Staff IT | 2 tahun | 2010 - 2012</p>
-                        <p class="text-start mb-1">- membuat website statis</p>
-                        <p class="text-start mb-1">- membuat website statis</p>
-                        <p class="text-start mb-1">- membuat website statis</p>
+                        <p class="fw-bold text-start mb-0"><?php echo $_POST["p1"]; ?></p>
+                        <p class="fst-italic text-start mb-1"><?php echo $_POST["jabatan"] . " " . "|"; echo $_POST["lmKerja"] . " " . "|" . " ";  echo $_POST["mulai"] . " - "; echo $_POST["akhir"]; ?></p>
+                        <p class="text-start mb-1">- <?php echo $_POST["jenisPekerjaan"]; ?></p>
                      </div>
                   </div>
 
@@ -94,9 +92,9 @@
                   <div class="row mt-2 ms-1">
                      <div class="col">
                         <h4 class="mt-5 bg-dark p-3 text-white">Skills</h4>
-                        <p class="text-start mb-1"><b>Membuat website statis</b> | Expert</p>
-                        <p class="text-start mb-1"><b>Bahasa Pemrogramman PHP</b> | Menengah</p>
-                        <p class="text-start mb-1"><b>VCS GIT</b> | Pemula</p>
+                        <p class="text-start mb-1"><b><?php echo $_POST["nmSkills"]; ?></b> | <?php echo $_POST["tingkatan"] ?></p>
+                        <!-- <p class="text-start mb-1"><b>Bahasa Pemrogramman PHP</b> | Menengah</p> -->
+                        <!-- <p class="text-start mb-1"><b>VCS GIT</b> | Pemula</p> -->
                      </div>
                   </div>
                </div>
