@@ -1,6 +1,8 @@
 <?php 
-   // require 'functions.php';
-   // var_dump($data);
+   session_start();
+   if(!isset($_SESSION["cetak"])) {
+      header("Location: http://localhost/cv-generator/app/create/");
+   }
 
 ?>
 <!DOCTYPE html>
@@ -48,14 +50,16 @@
                <div class="row">
                   <div class="col">
                      <h4 class="mt-5 bg-dark p-3 text-white">Ringkasan Diri</h4>
-                     <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sint eveniet et omnis, minima nostrum rem consectetur magnam. Voluptas, fuga voluptatem! Nostrum nemo, consequuntur deleniti a perferendis mollitia modi quisquam? Voluptate tempore aliquam neque. Veniam dolor labore aspernatur consequuntur id.</p>
+                     <p class="text-start"><?php echo $_POST["ringkasanDiri"]; ?>.</p>
                   </div>
                </div>
                <div class="row">
                   <div class="col">
                      <h4 class="mt-5 bg-dark p-3 text-white">Hubungi Saya</h4>
-                     <p class="text-start mb-1"><b>Facebook : </b> @malih</p>
-                     <p class="text-start mb-1"><b>Email : </b> malih@gmail.com</p>
+                     <p class="text-start mb-1"><b>Email : </b> <?php echo $_POST["email"]; ?></p>
+                     <p class="text-start mb-1"><b>Facebook : </b> <?php echo $_POST["fb"]; ?></p>
+                     <p class="text-start mb-1"><b>Instagram : </b> <?php echo $_POST["ig"]; ?></p>
+                     <p class="text-start mb-1"><b>LinkedIn : </b> <?php echo $_POST["linkedin"]; ?></p>
                   </div>
                </div>
                </div>

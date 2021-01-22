@@ -1,8 +1,7 @@
-<?php require 'functions.php'; 
-   // if(isset($_POST["makeCV"])) {
-   //    data($_POST);
-   //    header("Location: cv.php");
-   // }
+<?php session_start(); require 'functions.php'; 
+   if(isset($_POST["makeCV"])) {
+      $_SESSION["cetak"] = true;
+   }
 ?>
 
 <!DOCTYPE html>
@@ -44,6 +43,7 @@
                <div class="col col-lg-3 mt-2">
                   <div id="list-example" class="list-group">
                      <a class="list-group-item list-group-item-action" href="#list-item-1">Data Diri</a>
+                     <a class="list-group-item list-group-item-action" href="#list-item-6">Kontak</a>
                      <a class="list-group-item list-group-item-action" href="#list-item-2">Ringkasan Diri</a>
                      <a class="list-group-item list-group-item-action" href="#list-item-3">Pengalaman Kerja</a>
                      <a class="list-group-item list-group-item-action" href="#list-item-4">Skills</a>
@@ -67,17 +67,23 @@
                            <label for="job" class="form-label">Job Title</label>
                            <input type="text" class="form-control" id="job" name="job" required autocomplete="off">
                         </div>
+
+                        <h4 id="list-item-6"><b>Contact</b></h4>
                         <div class="mb-3">
                            <label for="email" class="form-label">Email</label>
                            <input type="text" class="form-control" id="email" name="email" required autocomplete="off">
                         </div>
                         <div class="mb-3">
-                           <label for="tmpLahir" class="form-label">Tempat Lahir</label>
-                           <input type="text" class="form-control" id="tmpLahir" name="tmpLahir" required autocomplete="off">
+                           <label for="linkedin" class="form-label">LinkedIn</label>
+                           <input type="text" class="form-control" id="linkedin" name="linkedin" required autocomplete="off">
                         </div>
                         <div class="mb-3">
-                           <label for="tglLahir" class="form-label">Tanggal Lahir</label>
-                           <input type="date" class="form-control" id="tglLahir" name="tglLahir" required autocomplete="off">
+                           <label for="ig" class="form-label">Instagram</label>
+                           <input type="text" class="form-control" id="ig" name="ig" required autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                           <label for="fb" class="form-label">Facebook</label>
+                           <input type="text" class="form-control" id="fb" name="fb" required autocomplete="off">
                         </div>
 
                         <h4 id="list-item-2"><b>Ringkasan Diri</b></h4>
@@ -88,8 +94,12 @@
 
                         <h4 id="list-item-3"><b>Pengalaman Kerja</b></h4>
                         <div class="mb-3">
-                           <label for="p1" class="form-label">Pengalaman Kerja</label>
+                           <label for="p1" class="form-label">Nama Perusahaan</label>
                            <input type="text" class="form-control" id="p1" name="p1" required autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                           <label for="jabatan" class="form-label">jabatan Kerja</label>
+                           <input type="text" class="form-control" id="jabatan" name="jabatan" required autocomplete="off">
                         </div>
                         <div class="mb-3">
                            <label for="lmKerja" class="form-label">Lama Kerja</label>
@@ -102,6 +112,10 @@
                         <div class="mb-3">
                            <label for="akhir" class="form-label">Akhir</label>
                            <input type="number" class="form-control" id="akhir" name="akhir" required autocomplete="off" placeholder="2001">
+                        </div>
+                        <div class="mb-3">
+                           <label for="jenisPekerjaan" class="form-label">Jenis Pekerjaan</label>
+                           <input type="number" class="form-control" id="jenisPekerjaan" name="jenisPekerjaan" required autocomplete="off" placeholder="cth: membuat desain animasi">
                         </div>
 
                         <h4 id="list-item-4"><b>Skills</b></h4>
