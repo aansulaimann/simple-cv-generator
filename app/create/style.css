@@ -1,0 +1,23 @@
+.bg-name {
+    background-image: url(http://localhost/cv-generator/public/img/pattern.jpg);
+}
+
+.bg-pale {
+    background-color: rgb(255, 248, 236);
+}
+
+.bg-cream {
+    background-color: blanchedalmond;
+}
+
+.teks-pale {
+    color: rgb(255, 248, 236);
+}
+
+.bg-sdark {
+    background-color: rgb(63, 63, 63);
+}
+
+.teks-burl {
+    color: rgb(228, 164, 81);
+}
