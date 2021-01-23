@@ -4,6 +4,8 @@
       // echo '<script>window.onload(window.print());</script>';
    }
 
+   // var_dump($_POST); die;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,7 +76,7 @@
                      <div class="col">
                         <h4 class="mt-5 bg-dark p-3 text-white">Pengalaman Kerja</h4>
                         <p class="fw-bold text-start mb-0"><?php echo $_POST["p1"]; ?></p>
-                        <p class="fst-italic text-start mb-1"><?php echo $_POST["jabatan"] . " " . "|"; echo $_POST["lmKerja"] . " " . "|" . " ";  echo $_POST["mulai"] . " - "; echo $_POST["akhir"]; ?></p>
+                        <p class="fst-italic text-start mb-1"><?php echo $_POST["jabatan"] . " " . "|"; echo $_POST["lmKerja"] . " " . "| " . " ";  echo $_POST["mulai"] . " - "; echo $_POST["akhir"]; ?></p>
                         <p class="text-start mb-1">- <?php echo $_POST["jenisPekerjaan"]; ?></p>
                      </div>
                   </div>
@@ -82,17 +84,18 @@
                   <div class="row ms-1">
                      <div class="col">
                         <h4 class="mt-5 bg-dark p-3 text-white">Latar Belakang Pendidikan</h4>
-                        <p class="fw-bold text-start mb-0">Universitas ABcdE</p>
-                        <p class="fst-italic text-start mb-1">S1 Teknik Sipil | 2010 - 2014</p>
-                        <p class="fw-bold text-start mt-2 mb-0">SMK Abd</p>
-                        <p class="fst-italic text-start mb-1">Teknik Komputer Jaringan | 2007 - 2010</p>
+                        <p class="fw-bold text-start mb-0"><?php echo $_POST["pendidikan1"]; ?></p>
+                        <p class="fst-italic text-start mb-1"><?php echo $_POST["jurusan"]; ?> | <?php echo $_POST["thAkademik"]; ?></p>
+                        <p class="fw-bold text-start mb-0"><?php echo $_POST["pendidikan2"]; ?></p>
+                        <p class="fst-italic text-start mb-1"><?php echo $_POST["jurusanSMA"]; ?> | <?php echo $_POST["thAkademin"]; ?></p>
                      </div>
                   </div>
 
                   <div class="row mt-2 ms-1">
                      <div class="col">
                         <h4 class="mt-5 bg-dark p-3 text-white">Skills</h4>
-                        <p class="text-start mb-1"><b><?php echo $_POST["nmSkills"]; ?></b> | <?php echo $_POST["tingkatan"] ?></p>
+                        <p class="text-start mb-1 bg-light text-white p-2 rounded"><b><?php echo $_POST["nmSkills"]; ?></b> | <?php echo $_POST["tingkatan"] ?></p>
+                        <p class="text-start mb-1 bg-secondary text-white p-2"><b><?php echo $_POST["nmSkills2"]; ?></b> | <?php echo $_POST["tingkatan2"] ?></p>
                         <!-- <p class="text-start mb-1"><b>Bahasa Pemrogramman PHP</b> | Menengah</p> -->
                         <!-- <p class="text-start mb-1"><b>VCS GIT</b> | Pemula</p> -->
                      </div>

@@ -39,7 +39,7 @@
                   <img src="public/img/sapiens.svg" alt="404" class="img-fluid">
                </div>
                <div class="col-12 text-center col-lg-6 align-self-center main-headlines">
-                  <h3>let's <span>create</span> your own span <span>amazing</span> cv</h4>
+                  <h3>let's <span>create</span> your own <span>amazing</span> cv</h4>
                   <p>make your cv now!</p>
                   <a href="http://localhost/cv-generator/app/create" class="btn btn-warning text-white px-5 py-2 mt-3">Create CV</a>
                </div>
